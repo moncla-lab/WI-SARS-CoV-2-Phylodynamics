@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 #This imports the Metadata
 import pandas
 df = pandas.read_csv('Official-Metadata.csv',dtype=object)
