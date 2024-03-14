@@ -1,0 +1,12 @@
+Unnamed: 0,GISAID_Name,WEDSS_DOC,WSLH_DOC,ZipCode,CountyFIPS,CensusTract,CensusBlock,VacDate1,Assigned-or-Unassigned-USDA-Classification,State-County-TractFIPSCode,State-County FIPS Code,Select State,Select County,Total-FIPS-Code,Primary RUCA Code 2010,"Secondary RUCA Code, 2010 (see errata)","Tract Population, 2010","Land Area (square miles), 2010","Population Density (per square mile), 2010",Urban-or-Rural-USDA-Classification
+0,Strain 1,5/9/2023,,53549,55055.0,101000,1013.0,,Assigned,55055101000,55055.0,WI,Jefferson County,55055101000.0,4.0,4.0,"3,881",5.9,659,Urban
+1,Strain 2,5/8/2023,,53012,55089.0,650300,4009.0,,Assigned,55089650300,55089.0,WI,Ozaukee County,55089650300.0,2.0,2.0,"5,371",23.2,231,Urban
+2,Strain 3,5/9/2023,,53012,55089.0,650300,4009.0,,Assigned,55089650300,55089.0,WI,Ozaukee County,55089650300.0,2.0,2.0,"5,371",23.2,231,Urban
+3,Strain 4,5/9/2023,,53158,55059.0,2000,2032.0,,Assigned,55059002000,55059.0,WI,Kenosha County,55059002000.0,1.0,1.0,"5,870",7.6,776.7,Urban
+4,Strain 5,5/8/2023,,53158,55059.0,2000,2032.0,,Assigned,55059002000,55059.0,WI,Kenosha County,55059002000.0,1.0,1.0,"5,870",7.6,776.7,Urban
+5,Strain 6,5/9/2023,,53403,55101.0,800,3021.0,,Assigned,55101000800,55101.0,WI,Racine County,55101000800.0,1.0,1.0,"4,531",2.3,"1,993.00",Urban
+6,Strain 7,5/8/2023,,53403,55101.0,800,3021.0,,Assigned,55101000800,55101.0,WI,Racine County,55101000800.0,1.0,1.0,"4,531",2.3,"1,993.00",Urban
+7,Strain 8,5/8/2023,,53532,55025.0,11402,3101.0,12/22/2020,Assigned,55025011402,55025.0,WI,Dane County,55025011402.0,1.0,1.0,"9,048",16.6,546,Urban
+8,Strain 9,5/7/2023,,53532,55025.0,11402,3101.0,12/22/2020,Assigned,55025011402,55025.0,WI,Dane County,55025011402.0,1.0,1.0,"9,048",16.6,546,Urban
+9,Strain 10,5/8/2023,,53597,,0,,,Unassigned,0,,,,,,,,,,Unknown
+10,Strain 11,5/7/2023,,53597,,0,,,Unassigned,0,,,,,,,,,,Unknown
