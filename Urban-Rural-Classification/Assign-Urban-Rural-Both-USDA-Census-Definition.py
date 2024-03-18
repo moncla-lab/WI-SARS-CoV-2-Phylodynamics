@@ -14,11 +14,11 @@ import argparse
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--metadata', type=str, help='Metadata file output from augur parse')
-parser.add_argument('--ruca-codes', type=str, help='RUCA Classification from USDA Standards')
+parser.add_argument('--ruca_codes', type=str, help='RUCA Classification from USDA Standards')
 
 args = parser.parse_args()
 metadata_file = args.metadata
-ruca_file = args.ruca
+ruca_file = args.ruca_codes
 
 
 
