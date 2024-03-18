@@ -140,6 +140,14 @@ df.loc[(df['RuralThreshold'] > 50) & (df['UrbanThreshold'] < 50), 'Urban_or_Rura
 # This removes NaN values
 df = df.replace(np.nan, '')
 
+# Further clean up column headers, removing spaces and other punctuation 
+
+df = df.rename(columns={'Secondary RUCA Code, 2010 (see errata)': 'Secondary RUCA Code 2010', 
+                        'Land Area (square miles), 2010' : 'Land Area sq miles 2010', 
+                        'Population Density (per square mile), 2010' : 'Pop Density per sq mile 2010'
+                       })
+df.columns = df.columns.str.replace(r'[\(\)]', '').str.replace(r'[\s\W]', '_', regex=True)
+
 # Save the modified DataFrame back to the CSV file
 df.to_csv(file_path, index=False)
 
