@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # This imports the Metadata
 # I titled the Metadata file as "Official-Metadata"
 import pandas
@@ -166,8 +168,6 @@ df.to_csv(file_path, index=False)
 
 
 
-# Further clean up column headers, removing spaces and other punctuation 
-df.columns = df.columns.str.replace(r'[\(\)]', '').str.replace(r'[\s\W]', '_', regex=True)
 # Further clean up column headers, removing spaces and other punctuation 
 df = df.rename(columns={'Secondary RUCA Code, 2010 (see errata)': 'Secondary RUCA Code 2010', 
                         'Land Area (square miles), 2010' : 'Land Area sq miles 2010', 
