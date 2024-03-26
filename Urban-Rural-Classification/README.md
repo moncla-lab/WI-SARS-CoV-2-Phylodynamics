@@ -1,4 +1,10 @@
-February 27, 2024
+How to use the scripts:
+
+The script "Assign-Urban-Rural-Both-USDA-Census-Definition.py" assigns urban and rural categories to Census Tracts utilizing both definitions from the Census and the USDA. To run this script, make sure you have the "RUCA-Definitions.csv" file (found in the USDA Definition folder) AND the "NHGIS-CensusTract-Data-WI.csv" file (found in the Census Definition folder) downloaded to your computer. The combined script has an argument parser to specify what the metadata file is titled as, but for the script to run, the metadata, RUCA codes, and NHGIS statistics must be downloaded to your computer for the script to read-in the files. The same instructions for downloading RUCA codes and NHGIS statistics apply to the python scrips for assigning distinctions with the USDA definition and the Census definition, respectively. Once the script is applied using python, it should output a csv file with the applied urban/rural disctinctions in a separate column for each definition. See the folder "Match Mismatch Analysis" for further data on how the definitions differ for our metadata.
+
+
+
+Data Contextualization
 
 The purpose of this repository is to assign metadata from the Midwest Sars Cov2 Project to urban and rural categories. These assignments are based on definitions from the USDA and the US Census, which are different. At our disposal, we have metadata on Wisconsin residents’ SARS-Cov-2 strains. This data includes Zip codes, County FIPS codes, and Census Tracts. We hypothesize that urban centers are key sources of COVID transmission; we are also interested in looking at fluctuations with rural areas. The overall goal is to analyze different strains in midwestern populations based on geographic location. This repository, however, is to sort each strain into urban and rural distinctions for further analysis on epidemiologic and geographic levels. To do so, this repository uses a script in Python and the various urban/rural definitions according to the Census and the USDA. This merge between what the Census/USDA data assigns and the metadata we have is specifically done using a python script in order to work with the data on a large scale and apply the script to other metadata files in the future.
 
