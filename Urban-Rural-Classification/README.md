@@ -1,6 +1,8 @@
 ## How to use the scripts:
 
 The script "Assign-Urban-Rural-Both-USDA-Census-Definition.py" assigns urban and rural categories to Census Tracts utilizing both definitions from the Census and the USDA. To run this script, make sure you have the "RUCA-Definitions.csv" file (found in the USDA Definition folder) AND the "NHGIS-CensusTract-Data-WI.csv" file (found in the Census Definition folder) downloaded to your computer. The combined script has an argument parser to specify what the metadata file is titled as, but for the script to run, the metadata, RUCA codes, and NHGIS statistics must be downloaded to your computer for the script to read-in the files. The same instructions for downloading RUCA codes and NHGIS statistics apply to the python scrips for assigning distinctions with the USDA definition and the Census definition, respectively. Once the script is applied using python, it should output a csv file with the applied urban/rural disctinctions in a separate column for each definition. See the folder "Match Mismatch Analysis" for further data on how the definitions differ for our metadata.
+The exact column names that must be in the metadata file are "CountyFIPS" and "CensusTract" for the script to run. 
+To call and run the script, be in the directory that all the files are downloaded to. I downloaded the files to a folder titled "Midwest-Phylo-Urban-Rural" that contains all the files stated above. 
 
 
 
