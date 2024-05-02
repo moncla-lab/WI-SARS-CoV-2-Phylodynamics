@@ -1,2 +1,0 @@
-﻿case_id,covid_mn_id,covid_virus_name,gisaid_id,genbank_id,ncbi_bioproject_id,ncbi_biosample_id,first_name,last_name,birth_date,specimen_date,datediff,census_block,census_tract,census_block_group,latitude,longitude,adi_natrank,adi_staternk,county,zip,race,raceth,hispanic,gender,time_since,age_group
-test,test,test,test,test,test,test,test,test,test,test,test,1009,20100,27055,test,test,test,test,test,55947,test,test,test,test,test,test
