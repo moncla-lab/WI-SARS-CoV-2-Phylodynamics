@@ -12,6 +12,8 @@ To run this script:
 
 4) Upon running the script, two csv files will be produced. One titled "MN-Midwest-Sars-Cov-2-ASSIGNED-Metadata.csv" matches the metadata to the USDA definition of urban/rural. The other titled "MN-Combined-Assigned-Metadata.csv" matches the metadata to both the USDA definition AND the Census definition. For more information about the different definitions, read below. 
 
+5) The file "TEST-Official-Metadata-MN.csv" is what the starting metadata file should look like as an example. The file "MN-Combined-Assigned-Metadata.csv" is what the final output should look like.
+
 
 
 ## Data Contextualization
