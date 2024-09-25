@@ -1,9 +1,11 @@
 How to use the scripts:
+
 The script "WI-Assign-Urban-Rural-Both-USDA-Census-Definition.py" assigns urban and rural categories to Census Tracts utilizing both definitions from the Census and the USDA.
 
 To run this script:
 
 Make sure you have the "WI-RUCA-Definitions.csv" file (found in the Wisconsin Classification folder) AND the "NHGIS-CensusTract-Data-WI.csv" file (found in the Wisconsin Classification folder) downloaded to your computer. The combined script has an argument parser to specify what the metadata file is titled as, but for the script to run, the metadata, RUCA codes, and NHGIS statistics must be downloaded to your computer for the script to read-in the files. Once the script is applied using python, it should output a csv file with the applied urban/rural disctinctions in a separate column for each definition.
+
 Also make sure you have the "Wisconsin-Lat-Long.csv" file (found in the Wisconsin Classification folder) downloaded to your computer. This will be used later in the script to assign latitude and longitude values for each strain.
 
 The exact column name that MUST be in the metadata file is "census_tract" for the script to run.
@@ -13,7 +15,10 @@ To call and run the script, be in the directory that all the files are downloade
 Upon running the script, two csv files will be produced. One titled "WI-Midwest-Sars-Cov-2-ASSIGNED-Metadata.csv" matches the metadata to the USDA definition of urban/rural. The other titled "WI-Combined-Assigned-Metadata.csv" matches the metadata to both the USDA definition AND the Census definition. For more information about the different definitions, read below.
 
 
+
+
 Data Contextualization
+
 The purpose of this repository is to assign metadata from the Midwest Sars Cov2 Project to urban and rural categories. These assignments are based on definitions from the USDA and the US Census, which are different. At our disposal, we have metadata on Minnesota residents’ SARS-Cov-2 strains. This data includes Census Tracts. This repository uses a script in Python and the various urban/rural definitions according to the Census and the USDA. This merge between what the Census/USDA data assigns and the metadata we have is specifically done using a python script in order to work with the data on a large scale and apply the script to other metadata files in the future.
 
 Sometimes the definitions that the Census gives us can be confusing and arbitrary. To begin simply defining the problem, here are some simple definitions:
