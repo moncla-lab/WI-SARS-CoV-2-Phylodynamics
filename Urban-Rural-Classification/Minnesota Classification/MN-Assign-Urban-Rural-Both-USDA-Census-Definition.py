@@ -1,26 +1,28 @@
 # This imports the Metadata
 # I named the given test file "TEST-Official-Metadata-MN.csv" for an example
 # Change the csv name to reflect what the metadate file is called
-import pandas
-df = pandas.read_csv('TEST-Official-Metadata-MN.csv',dtype=object)
-import numpy as np  # Import numpy for NaN representation
-df = df.replace(np.nan, '')
-
-
-
-
 import argparse
+
+import numpy as np  # Import numpy for NaN representation
+import pandas
+
+
+
+
+
+
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--metadata', type=str, help='Metadata file output from augur parse')
-parser.add_argument('--ruca-codes', type=str, help='RUCA Classification from USDA Standards')
+parser.add_argument('-m', '--metadata', type=str, help='Metadata file output from augur parse')
+parser.add_argument('-r', '--ruca-codes', type=str, help='RUCA Classification from USDA Standards', default='MN-RUCA-Definitions.csv')
 
 args = parser.parse_args()
 metadata_file = args.metadata
-ruca_file = args.ruca
+ruca_file = args.ruca_codes
 
 
-
+df = pandas.read_csv(metadata_file, dtype=object)
+df = df.replace(np.nan, '')
 
 # This creates a new column of assigned or unassigned USDA urban/rural classifications
 # With the Wisconsin metadata, some samples did not have a Census Tract number, which is why this is necessary to show that some samples will remain unassigned
@@ -43,7 +45,7 @@ df['Assigned-or-Unassigned-USDA-Classification'] = df.apply(assigned_or_unassign
 
 # Here we read in the file from the USDA classification
 # I titled the RUCA file as "MN-RUCA-Definitions"
-ruca = pandas.read_csv('MN-RUCA-Definitions.csv',dtype=object)
+ruca = pandas.read_csv(ruca_file, dtype=object)
 
 
 
@@ -96,7 +98,6 @@ df.to_csv(file_path, index=False)
 
 
 # Here we read in the file from the CENSUS classification
-import pandas
 census = pandas.read_csv('NHGIS-CensusTract-Data-MN.csv',dtype=object)
 
 
