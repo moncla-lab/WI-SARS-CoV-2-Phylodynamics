@@ -2,7 +2,7 @@
 
 The script "MN-Assign-Urban-Rural-Both-USDA-Census-Definition.py" assigns urban and rural categories to Census Tracts utilizing both definitions from the Census and the USDA. 
 
-To run this script (assuming successful installation and environment activation):
+To run the Python script (assuming successful installation and environment activation):
 
 ```
 # change to this directory
@@ -11,6 +11,8 @@ cd "Urban-Rural-Classification/Minnesota Classification"
 # run the script, adjust CSV file name accordingly
 python MN-Assign-Urban-Rural-Both-USDA-Census-Definition.py -m YOUR_METADATA_FILE.csv
 ```
+
+To run the R script, adjust the `input_file` and `output_file` variables for your specific usage.
 
 1) Make sure you have the "MN-RUCA-Definitions.csv" file (found in the Minnesota Classification folder) AND the "NHGIS-CensusTract-Data-MN.csv" file (found in the Minnesota Classification folder) downloaded to your computer. The combined script has an argument parser to specify what the metadata file is titled as, but for the script to run, the metadata, RUCA codes, and NHGIS statistics must be downloaded to your computer for the script to read-in the files. Once the script is applied using python, it should output a csv file with the applied urban/rural disctinctions in a separate column for each definition.
 
