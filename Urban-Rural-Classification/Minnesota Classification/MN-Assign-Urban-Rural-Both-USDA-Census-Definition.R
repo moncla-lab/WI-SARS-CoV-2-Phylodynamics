@@ -12,8 +12,8 @@ df <- read_csv(input_file, col_types=cols(census_tract=col_character()))
 ruca <- read_csv(ruca_file, col_types=cols('Total-FIPS-Code'=col_character()))
 census <- read_csv(census_file, col_types=cols(
   'GEOCODE'=col_character(),
-  'UrbanThreshold'=col_integer(),
-  'RuralThreshold'=col_integer(),
+  'UrbanThreshold'=col_double(),
+  'RuralThreshold'=col_double(),
 ))
 
 df <- df |>
