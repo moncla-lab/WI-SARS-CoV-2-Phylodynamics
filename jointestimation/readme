@@ -1,1 +1,1 @@
-we're putting r code here to make xmls for joint estimation with many trees
+R code (template_xml.R) to make XMLs for jointly estimated discrete trait diffusion models across clsuters. This script makes an XML takes in the empirical tree distributions for each cluster and runs the discrete trait diffusion model jointly across all given clusters.
