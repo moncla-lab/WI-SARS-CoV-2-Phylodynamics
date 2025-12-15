@@ -1,0 +1,30 @@
+strain	strain name.
+gisaid_id	Accession ID in the GISAID database (Global Initiative on Sharing All Influenza Data).
+genbank_id	Accession ID in the GenBank database (NCBI).
+date	Date of sample collection.
+adi_natrank	National rank based on the Area Deprivation Index (ADI).
+adi_staternk	State-level rank based on the Area Deprivation Index (ADI).
+county	County of residence.
+race	Reported race of individual.
+raceeth	Reported ethnicity of individual.
+hispanic	Reported identity of individual. 
+gender	Reported gender of the individual from whom the sample was collected.
+time_since	Time since vaccination.
+vbt_vax_count	Number of COVID-19 vaccine doses received before sample collection.
+age	"Age of the individual (e.g., 0–17, 22, 43, 89)."
+age_bins	"Age group of the individual (e.g., 0-17, 18-25, 26-40, 41-65, 65+)"
+Assigned_or_Unassigned_USDA_Classification	USDA classification: whether a census tract is assigned or unassigned for rural/urban designation.
+Primary_RUCA_Code_2010	Primary Rural-Urban Commuting Area (RUCA) code (2010 definition).
+Urban_or_Rural_USDA_Classification	USDA classification of area as urban or rural.
+UrbanThreshold	Threshold used to classify an area as urban (population-based cutoff).
+RuralThreshold	Threshold used to classify an area as rural (population-based cutoff).
+Urban_or_Rural_Census_Classification	Census classification of area as urban or rural.
+Collection_dt	Date the sample was collected.
+Lineage	"Assigned viral lineage (e.g., Pango lineage such as B.1.1.7)."
+Clade	"Assigned viral clade (e.g., Nextstrain or GISAID clade)."
+AA_Substitutions	Amino acid substitutions observed in the viral genome compared to reference.
+local_status	"State in which the strain originated from (e.g., Minnesota, New York, California)."
+nearby	"Minnesota, midwest, or non-midwest identifier (midwest states: WI, MI, IN, IL, MO, IA, ND, SD, NE)."
+mcleod_status	"McLeod, greater-MN, or non-MN identifier (greater-MN excluded McLeod)."
+urban_rural_combined	Specified urban/rural designation to greater-MN and McLeod.
+TC_status	"McLeod, greater-MN, non-MN, or TC_county identifier (greater-MN excluded McLeod, Hennepin, and Ramsey counties). "

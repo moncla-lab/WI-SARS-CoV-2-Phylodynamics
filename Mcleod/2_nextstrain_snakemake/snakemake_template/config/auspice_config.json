@@ -1,0 +1,83 @@
+{
+  "title": "Real-time tracking of SARS-Cov-2 in Mcleod, MN",
+  "maintainers": [
+    {"name": "you!", "url": ""}
+  ],
+  "build_url": "",
+  "colorings": [
+    {
+      "key": "vbt_vax_count",
+      "title": "No. of Vaccinations",
+      "type": "categorical"
+    },
+    {
+      "key": "Primary_RUCA_Code_2010",
+      "title": "RUCA Code",
+      "type": "categorical"
+    },
+    {
+      "key": "local_status",
+      "title": "State",
+      "type": "categorical"
+    },
+    {
+      "key": "urban_rural_combined",
+      "title": "Parsed Urban/Rural for Mcleod and greater-MN",
+      "type": "categorical"
+    },
+    {
+      "key": "age_bins",
+      "title": "Age Group",
+      "type": "categorical"
+    },
+    {
+      "key": "Clade",
+      "title": "SARS-CoV-2 Strain",
+      "type": "categorical"
+    },
+    {
+      "key": "Lineage",
+      "title": "Pango Lineage",
+      "type": "categorical"
+    },
+    {
+      "key": "mcleod_status",
+      "title": "County Status",
+      "type": "categorical"
+    },
+    {
+      "key": "nearby",
+      "title": "Border States",
+      "type": "categorical"
+    },
+    {
+      "key": "TC_status",
+      "title": "Twin City Status",
+      "type": "categorical",
+      "legend": [
+      	{"value": "mcleod"},
+      	{"value": "non-MN"},
+      	{"value": "TC_county"},
+      	{"value": "greater-MN"}
+      ]
+    },
+    {
+      "key": "adi_staternk",
+      "title": "ADI State Rank",
+      "type": "categorical"
+    },
+    {
+      "key": "Urban_or_Rural_USDA_Classification",
+      "title": "Urban/Rural, USDA Classification",
+      "type": "categorical",
+      "legend": [
+        {"value": "Urban"},
+        {"value": "non-MN"},
+        {"value": "Rural"}
+      ]
+    }
+  ],
+  "display_defaults": {
+    "color_by": "local_status"
+  }
+}

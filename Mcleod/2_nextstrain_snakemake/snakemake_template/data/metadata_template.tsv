@@ -1,0 +1,2 @@
+strain	gisaid_id	genbank_id	date	adi_natrank	adi_staternk	county	race	raceeth	hispanic	gender	time_since	vbt_vax_count	age	age_bins	Assigned_or_Unassigned_USDA_Classification	Primary_RUCA_Code_2010	Urban_or_Rural_USDA_Classification	UrbanThreshold	RuralThreshold	Urban_or_Rural_Census_Classification	Collection_dt	Lineage	Clade	AA_Substitutions	local_status	nearby	mcleod_status	urban_rural_combined	TC_status
+hCoV-19/USA/xxx	EPI_ISL_xxx	xxx	year-month-day	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	xxx	year-month-day	xxx	xxx	xxx	xxx	xxx	xxx	xxx	Xxx
